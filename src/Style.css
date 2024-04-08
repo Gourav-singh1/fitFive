@@ -1,0 +1,139 @@
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none !important;
+  box-sizing: border-box;
+}
+.bg_SpiritHeroleft{
+   background-image:
+ linear-gradient(177.12deg, #000000 2.4%, rgba(0, 0, 0, 0.41) 44.53%, #000000 86.34%), url("../src/assets/images/webp/SpiritHeroleft.webp");
+  mix-blend-mode: screen;
+   background-repeat: no-repeat;
+   background-position: center;
+  background-size: cover;
+}
+.bg_SpiritHeroright{
+   background-image:
+ linear-gradient(177.12deg, #000000 2.4%, rgba(0, 0, 0, 0.41) 44.53%, #000000 86.34%), url("../src/assets/images/webp/SpiritHeroright.webp");
+  mix-blend-mode: screen;
+   background-repeat: no-repeat;
+   background-position: center;
+  background-size: cover;
+}
+.bg_NutritionHero{
+   background-image:
+ linear-gradient(180deg, #000000 2.14%, rgba(0, 0, 0, 0) 43.31%, #000000 89.55%), url("../src/assets/images/webp/NutritionHero.webp");
+  mix-blend-mode: screen;
+   background-repeat: no-repeat;
+   background-position: center;
+  background-size: cover;
+}
+.bg_Stablityhero {
+  background-image: url("../src/assets/images/webp/element_sub_category_hero.webp");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.bg_Specialistshero {
+  background-image: url("../src/assets/images/webp/SpecialistsHero.webp");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.bg_Classeshero {
+  background-image: url("../src/assets/images/webp/ClassesHero.webp");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.bg_Testhero {
+  background-image: url("../src/assets/images/webp/TestHero.webp");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.bg_Producthero {
+  background-image: url("../src/assets/images/webp/ProductHero.webp");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.mw_470 {
+  max-width: 470px;
+}
+
+.text_light_gray {
+  color: #999999;
+}
+
+.bg_btn_view_more {
+  border-radius: 5px;
+  background-color: white;
+  padding: 10px 31px;
+  transition: 0.3s;
+}
+
+.bg_btn_view_more:hover {
+  outline: 2px solid white;
+  background-color: transparent;
+  transform: scale(1.03);
+  color: white !important;
+  box-shadow: white 0px 0px 5px;
+}
+
+/*  my-css */
+.specialist_card {
+  background-color: #1e1e1c;
+  padding: 12px 12px 20px 12px;
+}
+
+.top_like {
+  top: 15px;
+}
+
+.end_like {
+  right: 20px;
+}
+
+.c_pointer {
+  cursor: pointer;
+}
+
+.viewall_button {
+  transition: 200ms linear;
+}
+
+.viewall_button:hover {
+  color: #dc3545 !important;
+}
+
+/* min-media-queries */
+
+@media (max-width: 768px) {
+  .bg_Classeshero {
+    background-image: url("../src/assets/images/webp/ClassesHero.webp");
+    background-repeat: no-repeat;
+    background-position: 70%;
+    background-size: cover;
+  }
+}
+@media (min-width: 768px) {
+  .top_like {
+    top: 6px;
+  }
+
+  .end_like {
+    right: 15px;
+  }
+}
+
+@media (min-width: 992px) {
+  .top_like {
+    top: 8px;
+  }
+
+  .end_like {
+    right: 20px;
+  }
+}

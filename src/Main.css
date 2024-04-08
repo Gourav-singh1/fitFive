@@ -1,0 +1,436 @@
+* {
+  margin: 0;
+  padding: 0;
+  list-style-type: none !important;
+  text-decoration: none !important;
+  box-sizing: border-box;
+}
+
+.accordion-button:focus {
+  z-index: 3;
+  border-color: unset !important;
+  outline: 0;
+  box-shadow: unset !important;
+}
+
+.accordion-button:not(.collapsed) {
+  color: #ffffff !important;
+  background-color: unset !important;
+  box-shadow: unset !important;
+}
+
+.accordion-button {
+  font-size: var(--fs-xl) !important;
+  font-weight: var(--fw-semibold);
+  color: #ffffff !important;
+  background-color: unset !important;
+}
+
+.accordion-item {
+  background-color: unset !important;
+  border: unset !important;
+}
+
+.accordion-button::after {
+  content: "";
+  background-image: url(../src/assets/images/svg/ArrowDown.svg) !important;
+  background-repeat: no-repeat;
+  background-size: var(--bs-accordion-btn-icon-width);
+  transition: var(--bs-accordion-btn-icon-transition);
+}
+
+.bg_blue {
+  background-color: #1890e7;
+}
+
+.buy_border {
+  border: 1px solid #1890e7;
+}
+
+.transition_3ms {
+  transition: all 0.3s linear;
+}
+
+.transition_2ms {
+  transition: all 0.2s linear;
+}
+
+.buy_hover {
+  transition: all 0.3s linear !important;
+}
+
+.buy_hover:hover {
+  transform: translateY(-10px) !important;
+  -webkit-transform: translateY(-10px);
+  -moz-transform: translateY(-10px);
+  -ms-transform: translateY(-10px);
+  -o-transform: translateY(-10px);
+}
+
+.add_border {
+  border: 1px solid #ffffff;
+}
+
+.add_hover:hover {
+  border: 1px solid #1890e7 !important;
+  background-color: #1890e7 !important;
+}
+
+.Diam_hover:hover {
+  border: 1px solid transparent !important;
+  background: linear-gradient(165.42deg, #23a2e5 29.53%, #4933b5 73.94%),
+    #ffffff;
+  background-size: 102% 104%;
+  background-position-x: center;
+  background-position-y: -1px;
+}
+
+.cursor_pointer {
+  cursor: pointer;
+}
+
+.hover_image:hover {
+  opacity: 0.5 !important;
+}
+
+.icon_hover:hover {
+  transform: scale(1.2);
+}
+
+.button_hover {
+  transition: all 0.3s linear;
+}
+
+.button_hover:hover {
+  transform: scale(1.03) !important;
+}
+
+.d_grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  row-gap: 32px;
+  column-gap: 15px;
+}
+
+.text_shadow_unset {
+  text-shadow: unset !important;
+}
+
+.Health_section {
+  background: linear-gradient(180deg,
+      #000000 -2.29%,
+      rgba(0, 0, 0, 0) 45.32%,
+      #000000 98.44%),
+    linear-gradient(269.3deg,
+      #000000 2.4%,
+      rgba(0, 0, 0, 0) 42.19%,
+      #000000 86.59%),
+    url(../src/assets/images/webp/BgHealth.webp), #d9d9d9;
+  mix-blend-mode: screen;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.Physique_image {
+  position: relative;
+}
+
+.glow {
+  width: 150px;
+  height: 150px;
+  background-color: #d9d9d9;
+
+  border-radius: 50%;
+  filter: blur(50px);
+  left: 50%;
+  top: 50%;
+  animation: glow 4s linear infinite;
+}
+
+.health_image {
+  left: 45%;
+  top: 57%;
+  animation: scale 4s linear infinite;
+  /* filter: drop-shadow(8px 8px 10px white); */
+}
+
+@keyframes scale {
+  0% {
+    scale: 0.9;
+    filter: drop-shadow(0px 0px 0px white);
+
+  }
+
+  50% {
+    scale: 1;
+    /* filter: drop-shadow(2px 2px 3px white); */
+
+  }
+
+  100% {
+    scale: 0.9;
+    filter: drop-shadow(0px 0px 0px white);
+
+  }
+}
+
+@keyframes glow {
+  0% {
+    scale: 0.9;
+
+
+  }
+
+  50% {
+    scale: 1.4;
+
+  }
+
+  100% {
+    scale: 0.9;
+
+
+  }
+}
+
+.Physique_image::before {
+  content: url("../src/assets/images/svg/PhysiqueIcon.svg");
+  position: absolute;
+  top: -73px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 2;
+  transition: linear 300ms;
+}
+
+.Physique_image:hover::before {
+  scale: 1.1;
+}
+
+.MindBottom_image {
+  position: relative;
+}
+
+.MindBottom_image::before {
+  content: url("../src/assets/images/svg/MindIcon.svg");
+  position: absolute;
+  top: -73px;
+  left: 50%;
+  transform: translateX(-50%);
+  transition: linear 300ms;
+}
+
+.MindBottom_image:hover::before {
+  scale: 1.1;
+}
+
+.SpiritBottom_image {
+  position: relative;
+}
+
+.SpiritBottom_image::before {
+  content: url("../src/assets/images/svg/SpiritIcon.svg");
+  position: absolute;
+  top: -73px;
+  left: 44%;
+  transform: translateX(-44%);
+  transition: linear 300ms;
+}
+
+.SpiritBottom_image:hover::before {
+  scale: 1.1;
+}
+
+.NutritionsTop_image {
+  position: relative;
+}
+
+.NutritionsTop_image::before {
+  content: url("../src/assets/images/svg/NutritionsIcon.svg");
+  position: absolute;
+  top: -84px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 2;
+  transition: linear 300ms;
+}
+
+.NutritionsTop_image:hover::before {
+  scale: 1.1;
+}
+
+.RecoveryTop_image {
+  position: relative;
+}
+
+.RecoveryTop_image::before {
+  content: url("../src/assets/images/svg/RecoveryIcon.svg");
+  position: absolute;
+  top: -84px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 2;
+  transition: linear 300ms;
+}
+
+.RecoveryTop_image:hover::before {
+  scale: 1.1;
+}
+
+.PhysiqueHeroImg_bg {
+  background-image: url(../src/assets/images/webp/RecoveryHero.webp);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position-x: center;
+}
+
+.yoga_bg {
+  animation: up-down 3s infinite linear;
+}
+
+@keyframes up-down {
+  0% {
+    translate: 0 0;
+  }
+
+  50% {
+    translate: 0 20px;
+  }
+
+  100% {
+    translate: 0 0;
+  }
+}
+
+/* MEDIA SCREEN==================> */
+
+@media (min-width: 576px) {
+  .d_grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (min-width: 768px) {
+  .d_grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    row-gap: 46px;
+    column-gap: 63px;
+  }
+}
+
+@media (min-width: 992px) {
+  .Physique_image::before {
+    content: url("../src/assets/images/svg/PhysiqueIcon.svg");
+    position: absolute;
+    top: -73px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .PhysiqueHeroImg_bg {
+    background-position-y: -35px;
+  }
+
+  .Physique_image::after {
+    content: url("../src/assets/images/svg/PhysiqueBottom2.svg");
+    position: absolute;
+    bottom: -120px;
+    left: -75%;
+    z-index: -1;
+  }
+
+  .MindBottom_image::after {
+    content: url("../src/assets/images/svg/MindBottom2.svg");
+    position: absolute;
+    bottom: -112px;
+    right: -74%;
+  }
+
+  .SpiritBottom_image::after {
+    content: url("../src/assets/images/svg/SpiritBottom2.svg");
+    position: absolute;
+    top: 68px;
+    right: -109%;
+    z-index: -1;
+    transform: rotate(45.29deg);
+  }
+
+  .SpiritBottom_image::before {
+    content: url("../src/assets/images/svg/SpiritIcon.svg");
+    position: absolute;
+    top: -60px;
+    left: 44%;
+    transform: rotate(45.29deg) translateX(-44%);
+  }
+
+  .rotate_n_45 {
+    transform: rotate(-45.29deg) !important;
+  }
+
+  .NutritionsTop_image::after {
+    content: url("../src/assets/images/svg/NutritionsTop.svg");
+    position: absolute;
+    top: -115px;
+    right: -94%;
+  }
+
+  .RecoveryTop_image::after {
+    content: url("../src/assets/images/svg/RecoveryTop.svg");
+    position: absolute;
+    top: -115px;
+    right: 0%;
+  }
+
+  .translateY_lg_n_20 {
+    transform: translateY(-20px);
+  }
+
+  .PhysiqueHeroImg_bg {
+    all: unset;
+  }
+}
+
+@media (min-width: 1200px) {
+  .min_vh_xl_100 {
+    min-height: 100vh;
+  }
+
+  .Physique_image::after {
+    content: url("../src/assets/images/svg/PhysiqueBottom.svg");
+    position: absolute;
+    bottom: -120px;
+    left: -75%;
+  }
+
+  .MindBottom_image::after {
+    content: url("../src/assets/images/svg/MindBottom.svg");
+    position: absolute;
+    bottom: -120px;
+    right: -102%;
+  }
+
+  .SpiritBottom_image::after {
+    content: url("../src/assets/images/svg/SpiritBottom.svg");
+    position: absolute;
+    top: 103px;
+    right: -173%;
+    transform: rotate(45.29deg);
+  }
+
+  .NutritionsTop_image::after {
+    content: url("../src/assets/images/svg/NutritionsTop.svg");
+    position: absolute;
+    top: -115px;
+    right: -94%;
+  }
+
+  .RecoveryTop_image::after {
+    content: url("../src/assets/images/svg/RecoveryTop.svg");
+    position: absolute;
+    top: -115px;
+    right: 0%;
+  }
+}
